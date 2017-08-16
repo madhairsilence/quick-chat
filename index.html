@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Chat UI </title>
+        <link href="css/style.css" rel="stylesheet"/>
+        <style>
+            body{
+              height:100%;
+              margin:0px 0px;
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              font-size:14px;
+            }
+        </style>
+    </head>
+    <body>
+      <div id="chat-div"></div>
+      <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      <script src="js/data.js"> </script>
+      <script src="js/quickchat.js"> </script>
+      <script>
+          var options = {
+              //This function is called before adding the message to DOM. Callback is mandatory
+              addAction : function(callback){
+                  console.log(' Add message to Chat after making a rest call')
+                  if(callback){
+                    callback(); //callback can be used for Asynchronous functions
+                  }
+              },
+          };
+          var c = ChatUI.create('#chat-div', options );
+          c.addMessage({
+              sender : 'Vaavi',
+              message : 'New Message',
+              time : 'Mon Jun 13 2016 12:42:37',
+              quoteMessage : 'Qutoed'
+            });
+      </script>
+    </body>
+</html

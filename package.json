@@ -1,0 +1,32 @@
+{
+  "name": "quick-chat",
+  "version": "1.0.0",
+  "description": "Quick chat application for Web",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhairsilence/quick-chat.git"
+  },
+  "keywords": [
+    "chat",
+    "web",
+    "quick-chat"
+  ],
+  "author": "MadHairSilence",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madhairsilence/quick-chat/issues"
+  },
+  "homepage": "https://github.com/madhairsilence/quick-chat#readme"
+}
