@@ -15,7 +15,8 @@ var Template = {
                   '<div class="chat-desc"> ##description## </div>'+
                 '</div>',
   messageListContainer : '<ul class="chat-messages">',
-  quoteMessage : '<div class="chat-qmessage">##quoteMessage##</div>' ,
+  quoteMessage :   '<div class="chat-qpreview-label"> Quoted </div>'+
+                    '<div class="chat-qmessage">##quoteMessage##</div>' ,
   quotePreview : '<div class="chat-qpreview-label"> Quoted </div>'+
                   '<div class="chat-qpreview">##quoteMessage##</div class="chat-qpreview">',
   messageContainer   : '<li></li>',
@@ -132,7 +133,7 @@ var ChatUI = {
                       _this.addMessage({ sender : 'MySelf',
                           message : Utils.findInput().val(),
                           quoteMessage : Utils.findQuoteMessage().html(),
-                          time : Utils.getTime()
+                          time : new Date()
                         });
                   });
           }

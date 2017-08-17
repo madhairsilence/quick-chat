@@ -1,0 +1,22 @@
+{
+  "name": "quick-chat",
+  "description": "Quick chat application for Web",
+  "main": "js/quickchat.js",
+  "authors": [
+    "MadHairSilence"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chat",
+    "web",
+    "quick-chat"
+  ],
+  "homepage": "https://github.com/madhairsilence/quick-chat",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
